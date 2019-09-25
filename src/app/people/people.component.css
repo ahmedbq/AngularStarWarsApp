@@ -1,0 +1,19 @@
+ul {
+  list-style-type: none;
+}
+
+.card{
+  background-color: yellow;
+  padding: 1em;
+  border: 0.5em solid black;
+  box-shadow: 2em slategray;
+  font-size: large;
+  max-width: 15em;
+  border-radius: 1em;
+
+  transition: .2s; /* Animation */
+}
+
+.card:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
