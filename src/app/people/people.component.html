@@ -1,5 +1,9 @@
 <button (click)="get_people()">Click Me</button>
 
+<div *ngIf="results && results.length > 0 then showData else hideData">hello</div>
+<ng-template #showData>Look at the data!</ng-template>
+<ng-template #hideData>Click the Button to show data!</ng-template>
+
 <ul>
   <li *ngFor="let result of results">
       <div class="card">
