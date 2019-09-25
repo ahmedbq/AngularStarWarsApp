@@ -14,7 +14,7 @@ export class PeopleComponent implements OnInit {
   ngOnInit() {
   }
 
-  get_products(){
+  get_people(){
         this.httpClient.get('https://swapi.co/api/people/?format=json').subscribe((res : any)=>{
             console.log(res['results']);
             this.results = res['results'];

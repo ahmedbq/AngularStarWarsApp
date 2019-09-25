@@ -1,0 +1,9 @@
+<button (click)="get_people()">Click Me</button>
+
+<ul>
+  <li *ngFor="let result of results">
+      <div>
+        name: {{result.name}}
+      </div>
+  </li>
+</ul>
